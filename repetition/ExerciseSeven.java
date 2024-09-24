@@ -24,7 +24,7 @@ public class ExerciseSeven {
                     System.out.print(" ");
                 }
             }
-            System.out.println();
+            System.out.println("BAJJSSSS");
         }
     }
 }
