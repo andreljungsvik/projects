@@ -1,7 +1,9 @@
 import java.util.*;
 
 public class Company {
+    @SuppressWarnings("unused")
     private String companyName;
+    @SuppressWarnings("unused")
     private double orgNum;
     private String ceoName;
 
@@ -44,7 +46,7 @@ public class Company {
     public void companyMenu() {
         while (true) {
             System.out
-                    .println(String.format("Vad vill du ändra? %n1. Totala tillgångar %n2. Total skuld %n3. VD", null));
+                    .println(String.format("Vad vill du ändra? %n1. Totala tillgångar %n2. Total skuld %n3. VD"));
             System.out.println("Ange 1, 2 eller 3 (0 för att avsluta):");
             int changeValue = input.nextInt();
             input.nextLine();
@@ -76,6 +78,6 @@ public class Company {
             }
             break;
         }
-
+        input.close();
     }
 }
