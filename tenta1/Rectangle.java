@@ -13,6 +13,6 @@ public class Rectangle {
 
     public static void main(String[] args) {
         Rectangle rec1 = new Rectangle(50, 20);
-        System.out.println(rec1.area() + "cm2");
+        System.out.println(rec1.area() + "cm2bajs");
     }
 }
