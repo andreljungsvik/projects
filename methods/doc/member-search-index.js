@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"GameDie","l":"avgRoll()"},{"p":"<Unnamed>","c":"GameDie","l":"GameDie()","u":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"GameDie","l":"GameDie(int)","u":"%3Cinit%3E(int)"},{"p":"<Unnamed>","c":"GameDie","l":"getStats()"},{"p":"<Unnamed>","c":"GameDie","l":"rollDice(int)"}];updateSearchResults();

@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * Tärningspel, antal slag bestämms av användaren.
+ */
 public class GameDie {
     private int sides;
     private int rollSum;
