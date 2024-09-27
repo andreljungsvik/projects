@@ -69,6 +69,6 @@ public class GameDie {
      * Printar ut statistik för tärning.
      */
     public void getStats() {
-        System.out.printf(" sidiga tärningen tog det: %d slag. Medelvärdet: %.1f%n", rollCount, avgRoll());
+        System.out.printf(" sidiga tärningen tog det: %d slag. Medelvärdet för slagen: %.1f%n", rollCount, avgRoll());
     }
 }
