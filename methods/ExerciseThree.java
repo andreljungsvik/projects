@@ -18,5 +18,6 @@ public class ExerciseThree {
 
         int avgInt = MathFunctions.average(10, 30);
         System.out.println("Average of given integer numbers " + avgInt);
+        System.out.println("test123");
     }
 }
