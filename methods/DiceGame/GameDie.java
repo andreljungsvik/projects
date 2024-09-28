@@ -1,3 +1,4 @@
+package DiceGame;
 import java.util.*;
 
 /**
