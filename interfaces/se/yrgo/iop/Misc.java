@@ -1,4 +1,4 @@
-package se.yrgo.iop;
+package yrgo.iop;
 
 public class Misc {
     public static void doStuff() {
