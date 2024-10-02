@@ -4,7 +4,7 @@
 man ska vara försöktig med vad man gör public.
 4. Interface fungerar som ett kontrakt för vilka funktioner(metoder) en klass ska ha. Klasserna som skapas med interface måste definera dessa metoder.
 5. Tillåter en klass att ha flera metoder med samma namn. gör koden mer flexibel och tydlig.
-6. main metoden. public static void main(String[] args)
+6. main metoden. public static void main(String[] args
 7. javac
 8. Java Development Kit
 
