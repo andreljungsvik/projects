@@ -22,6 +22,6 @@ public class AndreLjungsvikInl2 {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.println(evenSum(10, 21));
+        System.out.println(evenSum(1, 7));
     }
 }
