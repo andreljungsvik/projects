@@ -1,0 +1,10 @@
+1. arrayer vill man använda när man har ett fast antal värden. i listor kan man lägga till eller ta bort värden från listan.
+2. Används för att skapa objekt av en klass.
+3. Public gör så att andra klasser kan använda sig av det. t.ex så kan man göra en variabel i fältet public. då kan andra klasser läsa eller ändra den.
+man ska vara försöktig med vad man gör public.
+4. Interface fungerar som ett kontrakt för vilka funktioner(metoder) en klass ska ha. Klasserna som skapas med interface måste definera dessa metoder.
+5. Tillåter en klass att ha flera metoder med samma namn. gör koden mer flexibel och tydlig.
+6. main metoden. public static void main(String[] args)
+7. javac
+8. Java Development Kit
+
