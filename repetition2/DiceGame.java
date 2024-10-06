@@ -2,7 +2,7 @@ import java.util.*;
 
 public class DiceGame {
     public static void main(String[] args) {
-        GameDie theDie = new RegularD6();
+        GameDie theDie = new RegularD12();
         try (Scanner scan = new Scanner(System.in)) {
             int p1 = playerTurn(scan, "spelare ett", theDie);
             int p2 = playerTurn(scan, "spelare två", theDie);
