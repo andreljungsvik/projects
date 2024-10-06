@@ -7,4 +7,9 @@ public class MathUtils {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        int[] numbers = { 10, 20, 30 };
+        System.out.println(allEven(numbers));
+    }
 }

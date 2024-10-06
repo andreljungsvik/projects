@@ -15,7 +15,7 @@ public class Pets {
         }
     }
     public static void main(String[] args) {
-        Pets lars = new Pets(0);
+        Pets lars = new Pets(4);
         System.out.println(lars.petCount());
     }
 }
