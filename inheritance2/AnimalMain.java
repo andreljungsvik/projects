@@ -8,8 +8,13 @@ public class AnimalMain {
         animals.add(new Chordate("Human", 0));
         animals.add(new Chordate("Glass Frog", 4));
 
-        for(Animal animal : animals) {
-            System.out.println(animal.getName());
-        }
+        // for(Animal animal : animals) {
+        //     System.out.println(animal.getName());
+        // }
+        Arthropod bajs = new Arthropod("Bajs", new String[] {"egg","larvae","imago"});
+        System.out.println(animals.get(0).toString());
+        System.out.println(animals.get(1).toString());
+        System.out.println(animals.get(2).toString());
+        System.out.println(animals.get(3).toString());
     } 
 }

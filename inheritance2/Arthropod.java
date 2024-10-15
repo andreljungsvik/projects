@@ -11,4 +11,8 @@ public class Arthropod extends Animal {
     public String[] getLifeStages() {
         return Arrays.copyOf(lifeStages, lifeStages.length);
     }
+
+    public String toString() {
+        return "Name: " + getName() + "\n" + "Life stages: " + Arrays.toString(lifeStages) + "\n"; 
+    }
 }

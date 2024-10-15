@@ -9,4 +9,8 @@ public class Chordate extends Animal {
     public int getTailLength() {
         return tailLength;
     }
+
+    public String toString() {
+        return "Name: " + getName() + "\n" + "Tail length: " + getTailLength() + "\n"; 
+    }
 }
