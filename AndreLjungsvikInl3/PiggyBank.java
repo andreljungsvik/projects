@@ -1,9 +1,10 @@
 public class PiggyBank {
     private int coinCount = 0;
     private int coinSum = 0;
-    final private int[] validCoins = { 1, 2, 5, 10 }; //array med tillåtna mynt. oförändbar
+    final private int[] validCoins = { 1, 2, 5, 10 }; // tillåtna mynt. oförändbar
 
-    public void addCoins(int coin) { 
+    // metoden lägger till mynt ifall det är giltligt
+    public void addCoins(int coin) {
         for (int validCoin : validCoins) {
             if (coin == validCoin) {
                 coinCount++;
