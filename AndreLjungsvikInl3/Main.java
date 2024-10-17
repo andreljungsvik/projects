@@ -1,6 +1,6 @@
 import java.util.*;
 
-// klass för att köra spargris programmet
+// Den här klassen kör spargris programmet
 public class Main {
     public static void main(String[] args) {
         PiggyBank piggyBank = new PiggyBank();
@@ -9,7 +9,7 @@ public class Main {
         }
     }
 
-    // metod för körning och utskrifter
+    // metod för körning, inmatning och utskrift
     private static void runPiggyBank(Scanner input, PiggyBank piggyBank) {
         while (true) {
             System.out.println("Vilket mynt vill du spara? ange 0 för att avsluta");
@@ -25,10 +25,10 @@ public class Main {
                 boolean isValidCoin = piggyBank.addCoins(coin); // kollar om myntet var giltigt eller ej
 
                 if (!isValidCoin) { // ifall myntet var ogiltigt
-                    System.out.println("Ogiltig mynt! Spargrisen accepterar endast svenska mynt (1, 2, 5, 10).");
+                    System.out.println("Ogiltig mynt! Spargrisen accepterar endast svenska mynt (1, 2, 5, 10). \n");
                 }
             } catch (InputMismatchException e) { // hanterar ogiltig inmatning
-                System.out.println("Ogiltig mynt! Spargrisen accepterar endast svenska mynt (1, 2, 5, 10).");
+                System.out.println("Ogiltig mynt! Spargrisen accepterar endast svenska mynt (1, 2, 5, 10). \n");
                 input.next(); // rensa felaktig inmatning
             }
         }
