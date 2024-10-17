@@ -15,7 +15,7 @@ public class Main {
                     }
                     piggyBank.addCoins(coin); 
                 } catch (InputMismatchException e) { // hanterar ogiltig inmatning
-                    System.out.println("Ogiltig inmatning!. Spargrisen accepterar endast svenska mynt (1, 2, 5, 10).");
+                    System.out.println("Ogiltig inmatning! Spargrisen accepterar endast svenska mynt (1, 2, 5, 10).");
                     input.next(); // rensa felaktig inmatning
                 }
             }
