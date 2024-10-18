@@ -2,22 +2,19 @@ import java.util.*;
 
 public class ExerciseOne {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        try {
+        try (Scanner scanner = new Scanner(System.in)) {
             int input = scanner.nextInt();
             if (input > 10) {
-                throw new IllegalArgumentException("Talet är större än 10.");
+                throw new IllegalArgumentException("aja baja din input var större än 10");
             } else if (input < 0) {
-                throw new RuntimeException("Talet är mindre än 0");
+                throw new RuntimeException("aja baja din input var mindre än 0");
             } else {
-                System.out.println(input);
+                System.out.println("valid min broder: " + input);
             }
         } catch (IllegalArgumentException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
-
     }
 }
