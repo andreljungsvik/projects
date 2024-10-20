@@ -7,7 +7,7 @@ public class Test {
         }
 
     }
-    public static void minMetod() {
+    public static void minMetod() throws MyException{
         throw new MyException("Detta är ett undantag.");
     }
 }
