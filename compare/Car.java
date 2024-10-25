@@ -1,8 +1,8 @@
 import java.util.Comparator;
 
 public class Car implements Comparable<Car> {
-    private String model;
-    private String regno;
+    private final String model;
+    private final String regno;
 
     public Car(String model, String regno) {
         this.model = model;
