@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Person implements Comparable<Person> {
     private String firstName;
     private String lastName;
@@ -25,7 +23,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
-        return lastName.compareTo(lastName);
+        return lastName.compareTo(o.lastName);
     }
 
     @Override
