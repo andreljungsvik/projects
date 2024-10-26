@@ -1,14 +1,15 @@
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Person implements Comparable<Person> {
     private final String firstName;
     private final String lastName;
-    private final int birthYear;
+    private final LocalDate birthDate;
 
-    public Person(String firstName, String lastName, int birthYear) {
+    public Person(String firstName, String lastName, LocalDate birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.birthYear = birthYear;
+        this.birthDate = birthDate;
     }
 
     public String getFirstName() {
@@ -19,8 +20,8 @@ public class Person implements Comparable<Person> {
         return lastName;
     }
 
-    public int getBirthYear() {
-        return birthYear;
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
     @Override
@@ -30,7 +31,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person [firstName=" + firstName + ", lastName=" + lastName + ", birthYear=" + birthYear + "]";
+        return "Person [firstName=" + firstName + ", lastName=" + lastName + ", birthDate=" + birthDate + "]";
     }
 
     @Override
@@ -47,7 +48,7 @@ public class Person implements Comparable<Person> {
 
         return Objects.equals(firstName, p.firstName)
                 && Objects.equals(lastName, p.lastName)
-                && Objects.equals(birthYear, p.birthYear);
+                && Objects.equals(birthDate, p.birthDate);
     }
 
     public int hashCode() {
@@ -58,13 +59,13 @@ public class Person implements Comparable<Person> {
         result = prime * result
                 + ((lastName == null) ? 0 : lastName.hashCode());
         result = prime * result
-                + Integer.hashCode(birthYear);
+                + Objects.hashCode(birthDate);
         return result;
     }
 
     public Person(Person other) {
         this.firstName = other.firstName;
         this.lastName = other.lastName;
-        this.birthYear = other.birthYear;
+        this.birthDate = other.birthDate;
     }
 }
