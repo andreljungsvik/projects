@@ -1,22 +1,23 @@
 import java.util.*;
-import javax.print.attribute.standard.PresentationDirection;
 
 public class ExerciseOne {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Set<String> person = new TreeSet<>();
+        Collection<String> person = new HashSet<>();
         Random rand = new Random();
-        int random = rand.nextInt(5);
-        while(true) {
+
+        System.out.println("skriv in tävlande: ");
+        while (true) {
             String addPerson = scanner.nextLine();
-            if (addPerson.equals("")) {
+            if (addPerson.isBlank()) {
                 break;
             }
             person.add(addPerson);
         }
+        List<String> list = new ArrayList<>(person);
+        int winner = rand.nextInt(person.size());
+        System.out.println("random numret var  " + winner);
 
-        for(int i = 0; i <= random; i++) {
-
-        }
+        System.out.println("Vinnaren är: " + list.get(winner));
     }
 }
