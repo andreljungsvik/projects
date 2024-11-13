@@ -25,6 +25,7 @@ public class Books {
             for (Map.Entry<String, List<String>> entry : treeMap.entrySet()) {
                 String author = entry.getKey();
                 List<String> books = entry.getValue();
+                Collections.sort(books);
                 System.out.println(author + ":" + String.join(",", books));
             }
 
