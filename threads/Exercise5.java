@@ -11,9 +11,20 @@ public class Exercise5 {
         return true;
     }
 
-    public static void main(String[] args) {
-        ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();
-        int[] numberArray = queue.stream().mapToInt(Integer::intValue).toArray();
+    private static boolean containsEight(int number) {
+        while (number != 0) {
+            if (number % 10 == 8) {
+                return true;
+            }
+
+            number = number / 10;
+        }
+        return false;
+    }
+
+    private static final ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();
+
+    public static void main(String[] args) throws InterruptedException{
         Thread t1 = new Thread(() -> {
             for (int i = 3; i < 10000; i++) {
                 if (isPrime(i)) {
@@ -21,10 +32,32 @@ public class Exercise5 {
                 }
             }
         });
-        Thread t2 = new Thread(() -> {
-            for (int i : numberArray) {
 
+        Thread t2 = new Thread(() -> {
+            while (!Thread.currentThread().isInterrupted()) {
+                Integer i = queue.poll();
+                if (i != null && containsEight(i)) {
+                    System.out.println(i);
+                }
+            }
+
+            while (true) {
+                Integer i = queue.poll();
+                if (i == null) {
+                    break;
+                } 
+                else if (containsEight(i)) {
+                    System.out.println(i);
+                }
             }
         });
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+
+        t2.interrupt();
+        t2.join();
     }
 }
